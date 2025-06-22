@@ -1,3 +1,238 @@
 body {
-  box-size: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 30px;
+  height: 10vh;
+}
+
+.links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: start;
+}
+
+header-link {
+  text-align: right;
+  float: inline-end;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.hero-section {
+  background-color: #1f2937;
+  gap: 30px;
+  text-align: center;
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.hero-text button:hover {
+  background-color: #fff;
+  color: #1f2937;
+}
+
+.hero-section img {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: right;
+  border-radius: 30px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.content-section {
+  background-color: #f3f4f6;
+  padding: 50px 20px;
+  text-align: center;
+  height: 70vh;
+}
+
+.content-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.Images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.image {
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  padding: 0 15px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.addition-info {
+  background-color: #e5e7eb;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  padding: 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.addition-info p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  color: #1f2937;
+  font-style: italic;
+}
+
+.contact-section {
+  background-color: #f3f4f6;
+  padding: 50px 20px;
+  text-align: start;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-part {
+  width: 70%;
+  height: 20vh;
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  gap: 50px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.contact-section button {
+  background-color: #3882f6;
+  color: #fff;
+}
+
+button {
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+} 
+
+.contact-section button:hover {
+  background-color: #fff;
+  color: #3882f6;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  height: 10vh;
+}
+
+@media (max-width: 768px) {
+  .header, .hero-section, .content-section, .addition-info, .contact-section {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .Images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .contact-part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-button button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
 }
