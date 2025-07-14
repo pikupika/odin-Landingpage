@@ -4,7 +4,7 @@ A simple, responsive landing page built as part of [The Odin Project](https://ww
 
 ## 📸 Demo
 
-> [Live Demo](#) — _Replace with your GitHub Pages or Netlify link_
+> (https://pikupika.github.io/odin-Landingpage/)
 
 ## 🎯 Project Goals
 
